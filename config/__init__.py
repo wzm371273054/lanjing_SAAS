@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 """
 Tencent is pleased to support the open source community by making 蓝鲸智云PaaS平台社区版 (BlueKing PaaS Community
 Edition) available.
@@ -12,7 +13,8 @@ specific language governing permissions and limitations under the License.
 """
 
 from __future__ import absolute_import
-
+import pymysql
+pymysql.install_as_MySQLdb()
 import os
 
 # This will make sure the app is always imported when

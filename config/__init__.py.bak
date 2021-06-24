@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import pymysql
+pymysql.install_as_MySQLdb()
 """
 Tencent is pleased to support the open source community by making 蓝鲸智云PaaS平台社区版 (BlueKing PaaS Community
 Edition) available.
@@ -39,9 +41,9 @@ def get_env_or_raise(key):
 
 
 # 应用 ID
-APP_CODE = ""
+APP_CODE = "fn2021001"
 # 应用用于调用云 API 的 Secret
-SECRET_KEY = ""
+SECRET_KEY = "56e77822-ec44-4dc8-916a-fde4555a3bbd"
 
 # SaaS运行版本，如非必要请勿修改
 RUN_VER = "open"
