@@ -13,7 +13,8 @@ specific language governing permissions and limitations under the License.
 """
 
 from __future__ import absolute_import
-
+import pymysql
+pymysql.install_as_MySQLdb()
 import os
 
 # This will make sure the app is always imported when
