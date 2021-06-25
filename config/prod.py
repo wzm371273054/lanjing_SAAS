@@ -32,11 +32,16 @@ DATABASES.update(
     {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': APP_CODE,  # 数据库名
+            'NAME': "fn2021001",  # 数据库名
             'USER': 'dev',  # 数据库用户
             'PASSWORD': '123',  # 数据库密码
             'HOST': '192.168.1.204',  # 数据库主机
             'PORT': '3306',  # 数据库端口
+            # 下面是新加入的
+            'OPTIONS': {
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+                'charset': 'utf8mb4',
+            },
         },
     }
 )
